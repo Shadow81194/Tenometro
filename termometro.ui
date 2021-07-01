@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Termometro</class>
+ <widget class="QMainWindow" name="Termometro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>326</width>
+    <height>257</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Termometro</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resulucion.qrc">
+    <normaloff>:/incono/recursor/leonardo.png</normaloff>:/incono/recursor/leonardo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(21, 21, 80, 255), stop:0.730337 rgba(170, 51, 51, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="font">
+         <font>
+          <family>Minion Pro Cond</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(0, 0, 0, 255), stop:0.730337 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(85, 0, 127, 255), stop:0.730337 rgba(255, 114, 114, 255));</string>
+        </property>
+        <property name="title">
+         <string>Centigrados</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLCDNumber" name="outCent">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.202247 rgba(95, 139, 25, 255), stop:0.853933 rgba(10, 0, 0, 255));
+border-color: rgb(85, 255, 0);
+color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDial" name="cmdCent">
+           <property name="styleSheet">
+            <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 0, 0, 255), stop:0.1 rgba(255, 255, 255, 255), stop:0.2 rgba(255, 176, 176, 167), stop:0.3 rgba(255, 151, 151, 92), stop:0.4 rgba(255, 125, 125, 51), stop:0.5 rgba(255, 76, 76, 205), stop:0.52 rgba(255, 76, 76, 205), stop:0.6 rgba(255, 180, 180, 84), stop:1 rgba(255, 255, 255, 0));
+background-color: rgb(255, 255, 127);</string>
+           </property>
+           <property name="minimum">
+            <number>-400</number>
+           </property>
+           <property name="maximum">
+            <number>210</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Minion Pro Cond</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(0, 0, 0, 255), stop:0.730337 rgba(255, 255, 255, 255));
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="font">
+         <font>
+          <family>Minion Pro Cond</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.202247 rgba(139, 25, 25, 255), stop:0.707865 rgba(10, 0, 0, 255));
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(0, 85, 255, 255), stop:0.730337 rgba(255, 255, 255, 255));
+color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(0, 0, 0, 255), stop:0.730337 rgba(255, 255, 255, 255));</string>
+        </property>
+        <property name="title">
+         <string>Fahrenheit</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLCDNumber" name="outFahr">
+           <property name="font">
+            <font>
+             <family>MS Serif</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 0, 255);
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.202247 rgba(25, 139, 65, 255), stop:0.853933 rgba(10, 0, 0, 255));</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDial" name="cmdFahr">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(117, 255, 246);</string>
+           </property>
+           <property name="maximum">
+            <number>400</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Minion Pro Cond</family>
+             <pointsize>11</pointsize>
+             <weight>75</weight>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;TextLabel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="font">
+         <font>
+          <family>Minion Pro Cond</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(0, 0, 0, 255), stop:0.730337 rgba(255, 255, 255, 255));
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(225, 225, 225, 255), stop:0.589888 rgba(0, 0, 0, 255));</string>
+        </property>
+        <property name="title">
+         <string>Kelvin</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLCDNumber" name="outKelvi">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.308989 rgba(0, 170, 0, 255), stop:0.730337 rgba(0, 0, 0, 255));</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDial" name="cmdKelvi">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 127);</string>
+           </property>
+           <property name="minimum">
+            <number>0</number>
+           </property>
+           <property name="maximum">
+            <number>500</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>Minion Pro Cond</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;TextLabel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>326</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>cmdFahr</tabstop>
+  <tabstop>cmdCent</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resulucion.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>cmdCent</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>outCent</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>87</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFahr</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>outFahr</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>249</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdKelvi</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>outKelvi</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
